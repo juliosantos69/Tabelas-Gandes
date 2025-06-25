@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,40 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             width: 1000px;
-            border-collapse: collapse ;
+            border-collapse: collapse;
             /* Obrigatório para ter o título da tabela fixo */
             position: relative;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot {
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
 
-        thead > tr > th {
+        thead>tr>th {
             /* No título da linha do cabeçalho vou grudar "sticky" */
-            position: sticky; /* grudar */
-            top: 0; /* na posição 0 */
+            position: sticky;
+            /* grudar */
+            top: 0;
+            /* na posição 0 */
             background-color: gray;
 
         }
+
         td.num {
             text-align: right;
         }
+
         caption {
             /* Tamanho da fonte */
             font-size: 1.5em;
@@ -44,6 +54,7 @@
             background-color: lightgray;
 
         }
+
         /* Efeito Zebra
             tdoby > tr - Todo tr que é filho do tdoby
             pseudo-classe tr:nth-child(2n) - Todo filho atualizando no intervalo de 2 linhas.
@@ -63,37 +74,48 @@
                 background-color: yellow;
             }
         */
-        tbody > tr:nth-child(20n) {
+        tbody>tr:nth-child(20n) {
             background-color: gray;
 
-        }body {
+        }
+
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
         table {
             width: 1000px;
-            border-collapse: collapse ;
+            border-collapse: collapse;
             /* Obrigatório para ter o título da tabela fixo */
             position: relative;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid black;
             padding: 10px;
         }
-        thead, tfoot {
+
+        thead,
+        tfoot {
             background-color: gray;
             color: white;
         }
 
-        thead > tr > th {
+        thead>tr>th {
             /* No título da linha do cabeçalho vou grudar "sticky" */
-            position: sticky; /* grudar */
-            top: 0; /* na posição 0 */
+            position: sticky;
+            /* grudar */
+            top: 0;
+            /* na posição 0 */
             background-color: gray;
 
         }
+
         td.num {
             text-align: right;
         }
+
         caption {
             /* Tamanho da fonte */
             font-size: 1.5em;
@@ -105,6 +127,7 @@
             background-color: lightgray;
 
         }
+
         /* Efeito Zebra
             tdoby > tr - Todo tr que é filho do tdoby
             pseudo-classe tr:nth-child(2n) - Todo filho atualizando no intervalo de 2 linhas.
@@ -124,117 +147,138 @@
                 background-color: yellow;
             }
         */
-        tbody > tr:nth-child(20n) {
+        tbody>tr:nth-child(20n) {
             background-color: gray;
 
         }
     </style>
 </head>
+
 <body>
     <table align="center">
         <caption>
             <strong>populacação dos estados brasileiros - 2024</strong>
         </caption>
-        <tr>
-            <td> <strong>estado</strong> </td>
-            <td> <strong>populacação</strong> </td>
-            <td> <strong>comando HTML utilizado</strong> </td>
-        </tr>
-        <tr>
-            <td> <strong>acre</strong> </td>
-            <td class="num"> <mark>830.018</mark> </td>
-            <td> <strong>'negrito'</mark> e <mark>destacado</mark> </td>
-        </tr>
-        <tr>
-            <td> <i> alagoas</i> </td>
-            <td class="num">3.365.351 </td>
-            <td> <i>'italico'</i> </td>
-        </tr>
-        <tr>
-            <td> <u> amapá</u> </td>
-            <td class="num"> 877.613 </td>
-            <td> <u>'texto sublinhado'</u></td>
-        </tr>
-        <tr>
-            <td> <s> amazonas </s> </td>
-            <td class="num"> <u>4,269.995</u></td>
-            <td> <s>'texto riscado' </s> e <u>'texto sublinhado'</u> </td>
-        </tr>
-        <tr>
-            <td> <sub>bahia</sub> </td>
-            <td class="num">14,141.262 </td>
-            <td> <sub>'texto subscrito'</sub> </td>
-        </tr>
-        <tr>
-            <td> <abbr title="Ceara">CE</abbr> </td>
-            <td class="num"> 9,240.580</td>
-            <td> <abbr title="">"texto abreviado"</abbr> </td>
-        </tr>
+        <thead>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px">População</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <strong>estado</strong> </td>
+                <td> <strong>populacação</strong> </td>
+                <td> <strong>comando HTML utilizado</strong> </td>
+            </tr>
+            <tr>
+                <td> <strong>acre</strong> </td>
+                <td class="num"> <mark>830.018</mark> </td>
+                <td> <strong>'negrito'</mark> e <mark>destacado</mark> </td>
+            </tr>
+            <tr>
+                <td> <i> alagoas</i> </td>
+                <td class="num">3.365.351 </td>
+                <td> <i>'italico'</i> </td>
+            </tr>
+            <tr>
+                <td> <u> amapá</u> </td>
+                <td class="num"> 877.613 </td>
+                <td> <u>'texto sublinhado'</u></td>
+            </tr>
+            <tr>
+                <td> <s> amazonas </s> </td>
+                <td class="num"> <u>4,269.995</u></td>
+                <td> <s>'texto riscado' </s> e <u>'texto sublinhado'</u> </td>
+            </tr>
+            <tr>
+                <td> <sub>bahia</sub> </td>
+                <td class="num">14,141.262 </td>
+                <td> <sub>'texto subscrito'</sub> </td>
+            </tr>
+            <tr>
+                <td> <abbr title="Ceara">CE</abbr> </td>
+                <td class="num"> 9,240.580</td>
+                <td> <abbr title="">"texto abreviado"</abbr> </td>
+            </tr>
             <td> <strong> distrito federal</strong></td>
             <td class="num">3,098.883</td>
             <td> <strong>"texto em negrito"</strong></td>
-        <tr>
-            <td> <q> espirito santo </q></td>
-            <td class="num">4,108.508</td>
-            <td> <q> "citação curta" </q></td>
-        </tr>
-        <tr>
-            <td> <cite> Goiás</cite> </td>
-            <td class="num">7,206.589</td>
-            <td> <cite>"citação de fonte"</cite></td>
-        </tr>
-        <tr>
-            <td> <code>maranhão</code></td>
-            <td class="num">6,775.805</td>
-            <td> <code> "texto monoespaçado"</code></td>
-        </tr>
-        <tr>
-            <td> <pre> mato grosso</pre> </td>
-            <td class="num">3,658.813</td>
-            <td> <pre> "texto pré-formatado" </pre> </td>
-        </tr>
-        <tr>
-            <td> <small> paraiba </small> </td>
-            <td class="num">4,059.905</td>
-            <td> <small> "texto pequeno" </small> </td>
-        </tr>
-        <tr>
-            <td> <sub> piaui </sub> </td>
-            <td class="num">3,281.480</td>
-            <td> <sub> "texto sub" </sub></td>
-        </tr>
-        <tr>
-            <td> <blockquote> rio de janeiro</blockquote> </td>
-            <td class="num">16,054.524</td>
-            <td> <blockquote> "citação em bloco" </blockquote></td>
-        </tr>
-        <tr>
-            <td> <strong> rio grande do sul </strong>
-            <td class="num">10,882.965</td>
-            <td> <strong> "negrito" </strong> </td>
-        </tr>
-        <tr>
-            <td> <i> rondonia </i></td>
-            <td class="num">1,616.379</td>
-            <td> <i> "italico" </i> </td>
-        </tr>
-        <tr>
-            <td> <mark> roraima </mark> </td>
-            <td class="num">636.707</td>
-            <td> <mark> "texto marcado" </mark> </td>
-        </tr>
-        <tr>
-            <td> <abbr title="tocantins">TO</abbr> </td>
-            <td class="num">1,607.363</td>
-            <td> <abbr title=""> "abreviado" </abbr> </td>
-        </tr>
-        <tr>
-            <th> total da população estimada:</th>
-            <td class="num"> <strong>87.396.210 </strong> </td>
-            <td> realizar a soma das colunas </td>
-        </tr>
+            <tr>
+                <td> <q> espirito santo </q></td>
+                <td class="num">4,108.508</td>
+                <td> <q> "citação curta" </q></td>
+            </tr>
+            <tr>
+                <td> <cite> Goiás</cite> </td>
+                <td class="num">7,206.589</td>
+                <td> <cite>"citação de fonte"</cite></td>
+            </tr>
+            <tr>
+                <td> <code>maranhão</code></td>
+                <td class="num">6,775.805</td>
+                <td> <code> "texto monoespaçado"</code></td>
+            </tr>
+            <tr>
+                <td>
+                    <pre> mato grosso</pre>
+                </td>
+                <td class="num">3,658.813</td>
+                <td>
+                    <pre> "texto pré-formatado" </pre>
+                </td>
+            </tr>
+            <tr>
+                <td> <small> paraiba </small> </td>
+                <td class="num">4,059.905</td>
+                <td> <small> "texto pequeno" </small> </td>
+            </tr>
+            <tr>
+                <td> <sub> piaui </sub> </td>
+                <td class="num">3,281.480</td>
+                <td> <sub> "texto sub" </sub></td>
+            </tr>
+            <tr>
+                <td>
+                    <blockquote> rio de janeiro</blockquote>
+                </td>
+                <td class="num">16,054.524</td>
+                <td>
+                    <blockquote> "citação em bloco" </blockquote>
+                </td>
+            </tr>
+            <tr>
+                <td> <strong> rio grande do sul </strong>
+                <td class="num">10,882.965</td>
+                <td> <strong> "negrito" </strong> </td>
+            </tr>
+            <tr>
+                <td> <i> rondonia </i></td>
+                <td class="num">1,616.379</td>
+                <td> <i> "italico" </i> </td>
+            </tr>
+            <tr>
+                <td> <mark> roraima </mark> </td>
+                <td class="num">636.707</td>
+                <td> <mark> "texto marcado" </mark> </td>
+            </tr>
+            <tr>
+                <td> <abbr title="tocantins">TO</abbr> </td>
+                <td class="num">1,607.363</td>
+                <td> <abbr title=""> "abreviado" </abbr> </td>
+            </tr>
+            <tr>
+                <th> total da população estimada:</th>
+                <td class="num"> <strong>87.396.210 </strong> </td>
+                <td> realizar a soma das colunas </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>87.396.210</strong></td>
+                <td></td>
+            </tr>
+        </tfoot>
     </table>
-
-    
 </body>
+
 </html>
